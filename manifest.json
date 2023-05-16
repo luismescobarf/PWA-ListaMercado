@@ -1,0 +1,16 @@
+{
+  "name" : "App Compras",
+  "short_name" : "App Compras",
+  "start_url" : "/PWA-ListaMercado/",
+  "orientation": "portrait",
+  "display": "standalone",
+  "description": "Aplicación para listas de compra de mercado",
+  "icons": [
+    {
+      "src": "./assets/img/comercio-electronico.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+  
+}

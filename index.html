@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Lista Compras</title>
+  <link href="./style.css" rel="stylesheet" type="text/css" />
+  <link href="./manifest.json" rel="manifest" />
+  <script src="./dexie.min.js"></script>
+
+  <script>
+    if('serviceWorker' in navigator){
+      window.addEventListener('load', ()=> {
+        navigator.serviceWorker.register('./sw.js')
+      });
+    }
+  </script>
+  
+</head>
+
+<body>
+  <div class="top">
+    <h4>Mi Lista de Mercado</h4>
+    <img width=30 height=40 src="./assets/img/checklist.png" alt="list_with_pencil"> 
+  </div>
+    <div class="zona-agregar">
+      <form action="submit" id="formulario">
+        
+        <div class="caja">
+            <label for="nombre">Nombre ítem:  </label>
+            <input type="text" id="nombre">
+        </div>
+
+        <div class="caja">
+            <label for="cantidad">Cantidad:  </label>
+            <input style="width:3rem" type="number" id="cantidad">
+        </div>
+
+        <div class="caja">
+            <label for="precio">Precio:  </label>
+            <input style="width:3rem" type="number" id="precio" min="0"> 
+        </div>
+        
+        <button type="button" id="agregar">Agregar</button>
+      </form>
+    </div>
+
+  <div id="listaMercado" class="lista-mercado">
+
+    <div class="item-lista">
+      <input type="checkbox" id="check">
+      <div class="producto-info">
+        <p id="nombre-producto"></p>
+        <div class="producto-numeros">
+          <p id="precio-producto"></p>
+          <p id="cantidad-producto"></p>
+        </div>
+      </div>
+      <button id="eliminar-producto">x</button>
+    </div>
+  </div>
+  
+<div class="footer">
+  <p>Precio total: $</p>
+  <p id="precio_total">18500</p>
+</div>  
+  
+<script src="./script.js"></script>  
+</body>
+
+</html>

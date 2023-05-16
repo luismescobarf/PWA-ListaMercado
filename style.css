@@ -1,0 +1,115 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #d3d3d3;
+}
+
+.top {
+  background-color: #acd7e7;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5px;
+  height: 40px;
+}
+
+.top h4 {
+  margin-left: 2rem;
+  color: white;
+}
+
+/*input[type="number"]
+{
+    
+    -webkit-appearance: textfield !important;
+    -moz-appearance:textfield !important;
+}*/
+
+.zona-agregar .caja {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  align-items: center;
+}
+
+.zona-agregar .caja input {
+  border: solid black 2px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#nombre,
+#cantidad,
+#precio {
+  margin-left: 10px;
+}
+
+
+.zona-agregar {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#agregar {
+  background-color: #808080;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  color: white;
+  font-weight: bold;
+  border: unset;
+  cursor: pointer;
+}
+
+.item-lista {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #eaeaea;
+  margin-right: 1px;
+  margin-top: 5px;
+}
+
+.producto-numeros{
+  display: flex;
+}
+
+#check {
+  background-color: white;
+  border-radius: 4px;
+  width: 3rem;
+  cursor: pointer;
+}
+
+.comprado{
+  background-color: green;
+}
+.comprado p{
+  color: white;
+  text-decoration: line-through;
+}
+
+
+#eliminar-producto {
+  background-color: #f18180;
+  width: 3rem;
+  border: unset;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+.footer {
+  display: flex;
+  margin-top: 2rem;
+
+}
